@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "setup": "node scripts/setup-topics.js",
+    "producer": "node producer/producer.js",
+    "consumer": "node consumer/consumer.js",
+    "dlq-monitor": "node consumer/dlq-monitor.js",
+    "dev:producer": "nodemon producer/producer.js",
+    "dev:consumer": "nodemon consumer/consumer.js"
   },
   "keywords": [],
   "author": "",
